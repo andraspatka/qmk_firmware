@@ -1,3 +1,17 @@
+# Redox
+
+Requirements:
+- https://github.com/qmk/qmk_distro_msys/releases/tag/1.5.2
+- `git clone --rescurse-submodules`
+
+Start QMK MSYS.exe
+```
+qmk setup -H C:/Informatika/redox/qmk_firmware
+qmk compile -kb redox -km default
+qmk flash -kb redox -km default
+```
+
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
