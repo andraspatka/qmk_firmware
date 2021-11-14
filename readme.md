@@ -1,14 +1,18 @@
 # Redox
 
 Requirements:
-- https://github.com/qmk/qmk_distro_msys/releases/tag/1.5.2
-- `git clone --rescurse-submodules`
+- Download: https://github.com/qmk/qmk_distro_msys/releases/tag/1.5.2
+- Github Fork: https://github.com/qmk/qmk_firmware
+- `git clone --rescurse-submodules <repo_url>`
 
-Start QMK MSYS.exe
-```
+Start **QMK MSYS.exe**
+```bash
+# setup
+qmk config user.keyboard=redox
+qmk config user.keymap=default
 qmk setup -H C:/Informatika/redox/qmk_firmware
-qmk compile -kb redox -km default
-qmk flash -kb redox -km default
+qmk compile
+qmk flash
 ```
 
 
