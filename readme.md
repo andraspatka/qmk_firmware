@@ -13,6 +13,10 @@ qmk config user.keymap=default
 qmk setup -H C:/Informatika/redox/qmk_firmware
 qmk compile
 qmk flash
+
+# def km
+qmk compile -kb redox -km default
+qmk flash -kb redox -km default
 ```
 
 
